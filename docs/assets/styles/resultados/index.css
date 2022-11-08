@@ -49,23 +49,25 @@ body {
     color: #ffffff;
 }
 
-.collection-title-container {
+.collection-result-container {
     display: flex;
-    min-height: 60vh;
+    min-height: 40vh;
     flex-direction: column;
     flex-wrap: nowrap;
+    margin: 1%;
+    background-color: #1f7a8c;
 }
 
 .title-collection {
-    padding: 5% 0 3%;
+    padding: 3% 0 2%;
     font-family: Arial;
     font-weight: 900;
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.2em;
     text-transform: none;
     text-align: center;
-    color: #022b3a;
+    color: #ffffff;
 }
 
 .collection {
@@ -80,11 +82,10 @@ body {
 .item-collection {
     display: block;
     flex: 1 1 30%;
-    max-width: 30%;
+    max-width: 35%;
     min-width: 150px;
     box-sizing: border-box;
     padding: 10px 10px 10px 10px;
-    cursor: pointer;
 }
 
 .item-image-container {
@@ -111,9 +112,10 @@ body {
     display: block;
     padding: 4% 8%;
     transition: background-color 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    cursor: pointer;
 }
 
-.item-collection:hover .item-name-container {
+.item-name-container:hover {
     background-color: #1f7a8c;
 }
 
@@ -123,8 +125,7 @@ body {
     color: white;
     font-family: Arial;
     font-size: calc(10px + 1vw);
-    font-weight: 800;
-    transition: transform 300ms;
+    font-weight: 600;
 }
 
 @media (min-width: 600px){
@@ -133,16 +134,12 @@ body {
     }
 }
 
-.item-collection:hover .item-name {
-    transform: translate(15px, 0px);
+.item-value {
+    display: inline-block;
+    font-style: italic;
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 4% 8%;
 }
-
-
-
-
-
-
-
-
-
-
